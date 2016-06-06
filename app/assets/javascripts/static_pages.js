@@ -22,24 +22,24 @@ $(document).ready(function() {
   })
   .setTween(tweenNav)
   .setPin('#nav-container')
-  .triggerHook(0)
-  .addIndicators();
+  .triggerHook(0);
+  // .addIndicators();
 
   var sceneAbout = new ScrollMagic.Scene({
     triggerElement: '#about'
   })
   .setTween(tweenAbout)
   .triggerHook(0.5)
-  .reverse(false)
-  .addIndicators();
+  .reverse(false);
+  // .addIndicators();
 
   var sceneFeature = new ScrollMagic.Scene({
     triggerElement: '#feature'
   })
   .setTween(tweenFeature)
   .triggerHook(0.6)
-  .reverse(false)
-  .addIndicators();
+  .reverse(false);
+  // .addIndicators();
 
   var controller = new ScrollMagic.Controller()
   .addScene([sceneNav, sceneAbout, sceneFeature]);

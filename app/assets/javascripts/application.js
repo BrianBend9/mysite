@@ -12,11 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require ScrollMagic.js
-//= require jquery.ScrollMagic.js
+//= require ScrollMagic.min.js
+//= require jquery.ScrollMagic.min.js
 //= require TweenMax.min.js
 //= require TimelineMax.min.js
-//= require animation.gsap.js
-//= require debug.addIndicators.js
+//= require animation.gsap.min.js
 //= require turbolinks
 //= require_tree .
