@@ -1,0 +1,100 @@
+$base-display-width: 70%;
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.parallax-window {
+  background: transparent;
+}
+
+.cards-centered {
+  display: flex;
+  width: $base-display-width;
+  justify-content: space-between;
+}
+
+#about,
+#feature {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+}
+
+#about {
+  min-height: 400px;
+
+  .cards-centered {
+    flex-flow: row;
+
+    .card-about {
+      flex-basis: 30%;
+    }
+  }
+}
+
+#feature {
+  min-height: 800px;
+  background-color: rgb(238, 238, 238);
+
+  .cards-centered {
+    flex-flow: row wrap;
+  }
+}
+
+#feature h3,
+#about h3 {
+  margin-bottom: 50px;
+  font-style: normal;
+}
+
+#footer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: inherit;
+  background-color: black;
+
+    #social {
+      display: flex;
+      width: 25%;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-between;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+  #about {
+    margin-top: 80px;
+  }
+
+  #feature {
+    padding-top: 50px;
+  }
+
+  #feature .cards-centered,
+  #about .cards-centered {
+    flex-flow: column wrap;
+    width: 94%;
+    margin-bottom: 50px;
+  }
+
+  #footer #social {
+    width: 50%;
+  }
+}

@@ -1,0 +1,40 @@
+.parallax-1 {
+  background-image: image-url("hexagonal-backgrounds/hexagon-6.jpg");
+}
+
+#masthead {
+  height: 550px;
+  width: 100%;
+  display: flex;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#masthead-mask {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  padding: 0 auto;
+  align-items: center;
+  justify-content: center;
+
+  h1.logo {
+    font-family: $logo-font-stack;
+    font-size: 100px;
+    font-style: normal;
+    color: rgba(255,255,255,1);
+    margin: 0px;
+    text-shadow: 1px 2px 4px rgba(150, 150, 150, 1);
+  }
+
+  h2.logo {
+    font-family: $base-font-stack;
+    font-style: normal;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+    top: -30;
+    margin: 0;
+    text-shadow: 1px 2px 4px rgba(150, 150, 150, 1);
+  }
+}
