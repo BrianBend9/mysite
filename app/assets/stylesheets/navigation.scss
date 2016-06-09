@@ -23,7 +23,7 @@ $button-transition-duration: 0.2s;     // The transition duration
 
 #nav {
   display: flex;
-  flex: row;
+  flex-flow: row;
   justify-content: space-around;
   align-items: center;
   list-style-type: none;
