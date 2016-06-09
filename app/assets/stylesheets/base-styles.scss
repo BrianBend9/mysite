@@ -81,6 +81,11 @@ body {
 
   #about {
     margin-top: 80px;
+    width: inherit;
+
+    .card-about {
+      flex-basis: 100%;
+    }
   }
 
   #feature {
