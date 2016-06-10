@@ -13,13 +13,9 @@ body {
 }
 
 .cards-centered {
-  // display: flex;
-  // justify-content: space-between;
   width: $base-display-width;
-  // height: 700px;
   margin: 0 auto;
   @include outer-container;
-
 }
 
 #about {
@@ -61,27 +57,6 @@ padding: 150px 0px 100px 0px;
 }
 
 @media screen and (max-width: 750px) {
-
-  #about {
-    margin-top: 80px;
-    width: inherit;
-
-    .card-about {
-      flex-basis: 100%;
-      flex-wrap: wrap;
-    }
-  }
-
-  #feature {
-    padding-top: 50px;
-  }
-
-  // #feature .cards-centered,
-  // #about .cards-centered {
-  //   flex-flow: column wrap;
-  //   width: 94%;
-  //   margin-bottom: 50px;
-  // }
 
   #footer #social {
     width: 50%;
