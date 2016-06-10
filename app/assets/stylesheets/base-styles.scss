@@ -1,4 +1,4 @@
-$base-display-width: 70%;
+$base-display-width: 85%;
 
 html,
 body {
@@ -13,39 +13,22 @@ body {
 }
 
 .cards-centered {
-  display: flex;
+  // display: flex;
+  // justify-content: space-between;
   width: $base-display-width;
-  justify-content: space-between;
-}
+  // height: 700px;
+  margin: 0 auto;
+  @include outer-container;
 
-#about,
-#feature {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  width: inherit;
 }
 
 #about {
-  min-height: 400px;
-
-  .cards-centered {
-    flex-flow: row;
-
-    .card-about {
-      flex-basis: 30%;
-    }
-  }
+padding: 150px 0px 100px 0px;
 }
 
 #feature {
-  min-height: 800px;
+  padding: 100px 0px 150px 0px;
   background-color: rgb(238, 238, 238);
-
-  .cards-centered {
-    flex-flow: row wrap;
-  }
 }
 
 #feature h3,
@@ -77,7 +60,7 @@ body {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
 
   #about {
     margin-top: 80px;
@@ -93,12 +76,12 @@ body {
     padding-top: 50px;
   }
 
-  #feature .cards-centered,
-  #about .cards-centered {
-    flex-flow: column wrap;
-    width: 94%;
-    margin-bottom: 50px;
-  }
+  // #feature .cards-centered,
+  // #about .cards-centered {
+  //   flex-flow: column wrap;
+  //   width: 94%;
+  //   margin-bottom: 50px;
+  // }
 
   #footer #social {
     width: 50%;
