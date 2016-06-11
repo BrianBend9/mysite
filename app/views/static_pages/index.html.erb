@@ -1,32 +1,34 @@
 <div id="about">
-  <h3><a name="about">About(Me).</a></h3>
+  <h2><a name="about">About(Me).</a></h2>
 
   <div class="cards-centered">
-    <div class="card-about">
-      <h4>Simplicity</h4>
-      <p> 
-        I am a Toronto native, and a person who is learning to always have an appreciation for simple things in life. Beautifully simple things. Including code.
-      </p>
-    </div>
+    <ul class="cards">
+      <li class="card-about">
+        <h4>Simplicity</h4>
+        <p> 
+          I am a Toronto native, and a person who is learning to always have an appreciation for simple things in life. Beautifully simple things. Including code.
+        </p>
+      </li>
 
-    <div class="card-about">
-      <h4>Work, Work, Work</h4>
-      <p>
-        Im always interested in being involved in new projects, when not working on my own ideas. I also fall into the category of developer who is never really 100% satisfied with my previous work. Regardless, I am always working on something, and this is fueled by my goals and intentions of developing great applications.
-      </p>
-    </div>
+      <li class="card-about">
+        <h4>Work, Work, Work</h4>
+        <p>
+          Im always interested in being involved in new projects, when not working on my own ideas. I also fall into the category of developer who is never really 100% satisfied with my previous work. Regardless, I am always working on something, and this is fueled by my goals and intentions of developing great applications.
+        </p>
+      </li>
 
-    <div class="card-about">
-      <h4>Endlessly Learning</h4>
-      <p>
-        I love to code. Since this great discovery, I am constantly thinking and learning about code. Currenlty I'm sharpening my skills in Java and Angular, and plan on creating mobile applications. With me, there is no fear of trying new things.
-      </p>
-    </div>
+      <li class="card-about">
+        <h4>Endlessly Learning</h4>
+        <p>
+          I love to code. Since this great discovery, I am constantly thinking and learning about code. Currenlty I'm sharpening my skills in Java and Angular, and plan on creating mobile applications. With me, there is no fear of trying new things.
+        </p>
+      </li>
+    </ul>
   </div>
 </div>
 
 <div id="feature">
-  <h3><a name="project">Projects.</a></h3>
+  <h2><a name="project">Projects.</a></h2>
 
   <div class="cards-centered">
 
@@ -103,9 +105,16 @@
 
 <div id="footer">
   <div id="social">
-    <%= image_tag "social/mail.png" %>
-    <%= link_to(image_tag("social/github.png"), "https://github.com/BrianBend9") %>
-    <%= link_to(image_tag("social/linkedin.png"), "https://ca.linkedin.com/in/bbend") %>
-    <%= image_tag "social/twitter.png" %>
+    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+
+    <%= link_to("https://github.com/BrianBend9") do %>
+      <i class="fa fa-github-alt fa-2x" aria-hidden="true"></i>
+    <% end %>
+
+    <%= link_to("https://ca.linkedin.com/in/bbend") do %>
+      <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+    <% end %>
+
+    <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
   </div>
 </div>

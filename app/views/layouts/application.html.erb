@@ -3,6 +3,7 @@
   <head>
     <title>Brian Bend: Web Developer</title>
     <link href='https://fonts.googleapis.com/css?family=Rancho|Gudea:400,700,400italic' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/af76c7d146.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -11,9 +12,9 @@
   <body>
     <a name="top"></a>
 
+    <%= render "layouts/navigation" %>
     <%= render "layouts/masthead" %>
 
-    <%= render "layouts/navigation" %>
 
     <%= yield %>
 

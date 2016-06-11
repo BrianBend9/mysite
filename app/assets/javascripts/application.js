@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require ScrollMagic.min.js
 //= require jquery.ScrollMagic.min.js
+//= require debug.addIndicators.js
 //= require TweenMax.min.js
 //= require TimelineMax.min.js
 //= require animation.gsap.min.js

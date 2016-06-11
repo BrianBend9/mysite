@@ -3,11 +3,10 @@ $large-card-size: 49%;
 $card-hover-color: rgba(80, 163, 231, 0.9);
 
 .card-about {
-  display: flex;
-  flex-flow: column wrap;
+  @include span-columns(4);
+  @include omega(3n);
   text-align: center;
   visibility: hidden;
-  margin: 0 1em 0 1em;
 }
 
 .cards {
@@ -25,7 +24,7 @@ $card-hover-color: rgba(80, 163, 231, 0.9);
   .card-feature,
   .size-large {
     margin: 5px;
-    height: 150px;
+    height: 200px;
     position: relative;
     background-position: center;
 
@@ -85,10 +84,10 @@ $card-hover-color: rgba(80, 163, 231, 0.9);
         display: inline-block;
         transform: translateY(30px);
         font-style: normal;
-        font-size: 22px;
+        font-size: 24px;
         color: white;
         visibility: hidden;
-        padding: 6px 16px 6px 16px;
+        padding: 6px 28px 6px 28px;
         border: 2px solid white;
         transition: all 0.2s ease-in-out;
         border-radius: 4px;
@@ -196,6 +195,7 @@ $card-hover-color: rgba(80, 163, 231, 0.9);
 
   .cards {
     .card-feature,
+    .card-about,
     .size-large {
       @include span-columns(12);
       @include omega(1n);

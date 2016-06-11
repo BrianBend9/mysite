@@ -8,12 +8,12 @@ $button-transition-duration: 0.2s;     // The transition duration
 
 #nav-container {
   width: 100%;
-  height: 60px;
+  height: 80px;
   background-color: black;
   opacity: .85;
   // box-shadow: 9px 10px 11px -6px rgba(0,0,0,0.75);
   z-index: 999;
-  position: absolute;
+  position: fixed;
 }
 
 .fix-nav {
@@ -40,7 +40,7 @@ $button-transition-duration: 0.2s;     // The transition duration
       text-decoration: none;
       // color: rgba(195, 192, 192, 0.8);
       color: white;
-      line-height: 60px;
+      line-height: 80px;
 
       &:hover {
         color: rgba(195, 192, 192, 0.8);
@@ -170,8 +170,8 @@ $button-transition-duration: 0.2s;     // The transition duration
       width: 100%;
       background-color: black;
       border-top: 0.5px solid gray;
-      height: 40px;
-      line-height: 40px;
+      height: 50px;
+      line-height: 50px;
       margin: 0px;
     }
 
