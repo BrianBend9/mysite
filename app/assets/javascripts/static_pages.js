@@ -30,8 +30,8 @@ $(document).ready(function() {
   })
   .setTween(tweenAbout)
   .triggerHook(0.5)
-  .reverse(false)
-  .addIndicators();
+  .reverse(false);
+  // .addIndicators();
 
   var sceneFeature = new ScrollMagic.Scene({
     triggerElement: '#feature'
