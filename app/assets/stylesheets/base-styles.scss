@@ -9,8 +9,10 @@ body {
   // overflow: hidden;
 }
 
-.parallax-window {
-  background: transparent;
+.spacer {
+  height: 50px;
+  width: inherit;
+  background-color: rgb(238, 238, 238);
 }
 
 .cards-centered {
@@ -45,7 +47,7 @@ padding: 100px 0px 100px 0px;
 
     #social {
       display: flex;
-      width: 40%;
+      width: 30%;
       flex-flow: row wrap;
       align-items: center;
       justify-content: space-between;
@@ -53,6 +55,14 @@ padding: 100px 0px 100px 0px;
       img {
         width: 40px;
         height: 40px;
+      }
+
+      i {
+        color: white;
+
+        &:hover {
+          color: rgba(195, 192, 192, 0.8);
+        }
       }
     }
 }

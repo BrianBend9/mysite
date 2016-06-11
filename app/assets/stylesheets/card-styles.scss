@@ -60,7 +60,7 @@ $card-hover-color: rgba(80, 163, 231, 0.9);
       h4 {
         visibility: hidden;
         position: relative;
-        margin-top: 15px;
+        margin-top: 38px;
         font-style: normal;
         transform: translateY(-20px);
         color: rgba(255,255,255,1);
@@ -78,18 +78,25 @@ $card-hover-color: rgba(80, 163, 231, 0.9);
         transition: all 0.2s ease-in-out;
       }
 
+      i {
+        color: white;
+        position: relative;
+        transform: translateY(45px);
+        transition: transform 0.3s ease-in-out;
+      }
+
       a {
         background-color: rgba(16, 16, 19, 0.55)black;
         position: relative;
         display: inline-block;
         transform: translateY(30px);
         font-style: normal;
-        font-size: 24px;
+        font-size: 36px;
         color: white;
         visibility: hidden;
-        padding: 6px 28px 6px 28px;
-        border: 2px solid white;
-        transition: all 0.2s ease-in-out;
+        padding: 6px 50px 6px 50px;
+        border: 3px solid white;
+        transition: all 0.3s ease-in-out;
         border-radius: 4px;
 
         &:hover {
@@ -106,6 +113,7 @@ $card-hover-color: rgba(80, 163, 231, 0.9);
 
 .card-feature:hover .card-feature-mask h4,
 .card-feature:hover .card-feature-mask p,
+.card-feature:hover .card-feature-mask i,
 .card-feature:hover .card-feature-mask a {
   visibility: visible;
   transform: translateY(0px);
@@ -200,5 +208,9 @@ $card-hover-color: rgba(80, 163, 231, 0.9);
       @include span-columns(12);
       @include omega(1n);
     }
+  }
+
+  .card-about {
+    margin-bottom: 30px;
   }
 }
