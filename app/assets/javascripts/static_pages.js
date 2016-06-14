@@ -1,7 +1,7 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
 
-$(document).ready(function() {
+$(document).on("load ready", function() {
   // Fade-in transitions for About and Feature sections
   var tweenAbout = new TweenMax.from('.card-about', 1, {
     css: {autoAlpha:0},
