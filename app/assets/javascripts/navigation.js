@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-responsive-menu hambuger button toggle
+// responsive-menu hambuger button toggle
   "use strict";
 
   var toggleButton = document.querySelector(".hamburger");
