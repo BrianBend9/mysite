@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap-sprockets
 //= require ScrollMagic.min.js
 //= require jquery.ScrollMagic.min.js
 //= require debug.addIndicators.js
