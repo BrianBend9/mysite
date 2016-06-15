@@ -3,15 +3,15 @@
 
 $(document).on("load ready", function() {
   // Fade-in transitions for About and Feature sections
-  var tweenAbout = new TweenMax.from('.card-about', 1, {
-    css: {autoAlpha:0},
-    repeat: 0
-  });
-
-  var tweenFeature = new TweenMax.from('.card-feature', 1, {
-    css: {autoAlpha:0},
-    repeat: 0
-  });
+  // var tweenAbout = new TweenMax.from('.card-about', 1, {
+  //   css: {autoAlpha:0},
+  //   repeat: 0
+  // });
+  //
+  // var tweenFeature = new TweenMax.from('.card-feature', 1, {
+  //   css: {autoAlpha:0},
+  //   repeat: 0
+  // });
 
   // Transition for navbar animation and fixed top positioning
   // var tweenNav = new TweenMax.to('#nav-container', 0.5);
@@ -25,24 +25,24 @@ $(document).on("load ready", function() {
   // .triggerHook(0)
   // .addIndicators();
 
-  var sceneAbout = new ScrollMagic.Scene({
-    triggerElement: '#about'
-  })
-  .setTween(tweenAbout)
-  .triggerHook(0.5)
-  .reverse(false);
-  // .addIndicators();
-
-  var sceneFeature = new ScrollMagic.Scene({
-    triggerElement: '#feature'
-  })
-  .setTween(tweenFeature)
-  .triggerHook(0.6)
-  .reverse(false);
-  // .addIndicators();
-
-  var controller = new ScrollMagic.Controller()
-  .addScene([sceneAbout, sceneFeature]);
+  // var sceneAbout = new ScrollMagic.Scene({
+  //   triggerElement: '#about'
+  // })
+  // .setTween(tweenAbout)
+  // .triggerHook(0.5)
+  // .reverse(false);
+  // // .addIndicators();
+  //
+  // var sceneFeature = new ScrollMagic.Scene({
+  //   triggerElement: '#feature'
+  // })
+  // .setTween(tweenFeature)
+  // .triggerHook(0.6)
+  // .reverse(false);
+  // // .addIndicators();
+  //
+  // var controller = new ScrollMagic.Controller()
+  // .addScene([sceneAbout, sceneFeature]);
 
   //Smooth scroll to anchor positions on click of Navbar links
   $('a[href*="#"]:not([href="#"])').click(function() {
