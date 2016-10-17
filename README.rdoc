@@ -1,28 +1,17 @@
-== README
+#mysite
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Just a small website created using Ruby on Rails...
 
-Things you may want to cover:
+Incorporates various features including:
 
-* Ruby version
+* CSS animations & keyframes
+* CSS transitions
+* Image hover animations
+* Flexbox
+* Responsive navigation bar with animated dropdown menu
+* Responsive layout
+* Javascript auto scrolling to different sections of the page
+* links to other projects
+* Font-awesome icons
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+And more to come...
