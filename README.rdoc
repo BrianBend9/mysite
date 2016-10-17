@@ -1,4 +1,4 @@
-#mysite
+# mysite
 
 Just a small website created using Ruby on Rails...
 
